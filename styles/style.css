@@ -22,6 +22,11 @@ body {
 
 }
 
+.site-width {
+    margin: 0 auto;
+    width: 1160px;
+}
+
 
 /* .allov er {
     background-repeat: no-repeat;
@@ -102,14 +107,14 @@ body {
     font-size: 2em;
 }
 
-.nav-ending{
+.nav-ending {
     display: none;
 }
+
 /* banner-area */
 .banner-area {
 
-    margin: 0 auto;
-    width: 1160px;
+
     padding: 20px 0px;
 
     display: flex;
@@ -143,19 +148,90 @@ body {
 .banner-btn {
     color: var(--white);
     font-family: Quicksand;
-    font-size: 20px;
+    font-size: 1.5em;
     font-weight: 600;
     border-radius: 12px;
     background: var(--black);
-    padding: 0px 50px;
+    padding: ;
     height: 50px;
-    width: 300px;
-
-
+    width: 200px;
     border: none;
 }
 
+/* Curriculum section */
+.curriculum-area {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.curriculum-area>h1{
+    font-size: 3.5em;
+    padding: 60px 0 80px 0;
+}
 
+.all-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    gap: 40px;
+
+}
+
+.card-bg {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px 0;
+
+
+
+}
+
+.card-bg>img {
+    margin: 0 auto;
+    width: 150px;
+    display: flex;
+
+
+}
+
+.c-card-3 {
+    padding: 50px 40px;
+    border: 0.94px solid rgb(242, 232, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(238, 225, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+
+.c-card-2 {
+
+    padding: 50px 40px;
+    border: 1px solid rgb(254, 162, 1, .2);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(255, 244, 220), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+
+}
+
+.c-card-1 {
+    padding: 50px 40px;
+    border: 0.94px solid rgb(222, 245, 255);
+    border-radius: 18.86px;
+    box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
+}
+.c-btn-one {
+    color: var(--blue);
+}
+.c-btn-two {
+    color: var(--orange);
+}
+.c-btn-three {
+    color: var(--blue2);
+}
 
 @media screen and (max-width: 576px) {
     .nav-area {
@@ -198,9 +274,10 @@ body {
     .logo-area>h1 {
         display: none;
     }
-    .nav-ending{
-     display: block;
-     border-top:1px solid var(--orange);
+
+    .nav-ending {
+        display: block;
+        border-top: 1px solid var(--orange);
 
     }
 
@@ -229,9 +306,42 @@ body {
 
         width: 80%;
     }
-    .banner-btn{
+
+    .banner-btn {
         margin: 0 auto;
         padding: 0px;
 
     }
+
+    /* Curriculum section */
+    .curriculum-area {
+        margin: 0 auto;
+    }
+
+    .all-cards {
+        text-align: center;
+        width: 100%;
+        grid-template-columns: auto;
+
+    }
+
+    .site-width {
+        width: 100%;
+    }
+
+    .card-bg {
+
+    }
+    .curriculum-area{
+        display: flex; 
+    width: 90%; 
+    
+
+}
+.curriculum-area>h1{
+    padding: 50px 0px 30px 0px;
+}
+
+    
+
 }
