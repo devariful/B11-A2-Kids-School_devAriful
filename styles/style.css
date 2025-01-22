@@ -412,6 +412,14 @@ body {
     border: none;
 }
 
+
+/* marquee section */
+.marq{
+    font-size: 3em;
+    padding-top: 20px;
+    color: var(--blue2);
+}
+
 /* footer area */
 .footer-area {
 
