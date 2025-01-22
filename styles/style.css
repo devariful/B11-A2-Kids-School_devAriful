@@ -280,7 +280,11 @@ body {
 .left-stories{
     display: flex;
     flex-direction: column;
+    justify-content:flex-start;
     gap: 20px;
+}
+.left-stories>h3{
+    padding-left: 20px;
 }
 .arrow {
     color: var(--white);
@@ -303,6 +307,7 @@ body {
     margin: 0 auto;
 }
 
+
 .stories-part {
 
     text-align: center;
@@ -311,7 +316,7 @@ body {
 
 .stories-part>h1 {
     font-size: 3.5em;
-    padding: 30px 0px;
+    
 }
 
 .stories-all-cards {
@@ -330,7 +335,10 @@ body {
     border-radius: 16px 16px 0 0;
 }
 
-
+.left-stories{
+    text-align: left;
+    
+}
 .cards-left {
     width: calc(50%-20px);
     background-color: white;
@@ -367,10 +375,12 @@ body {
 }
 
 .card-content-1 {
+    text-align: left;
     padding: 0px 40px;
 }
 
 .card-content-2 {
+    text-align: left;
     padding: 0px 20px;
 }
 
@@ -628,11 +638,15 @@ body {
 
     }
 
+    .card-content-2 {
+        text-align: center;
+    }
     .cards-left {
         display: none;
 
     }
     .left-para{
+       
         color: black;
     }
 
