@@ -152,19 +152,29 @@ body {
     font-weight: 600;
     border-radius: 12px;
     background: var(--black);
-    padding: ;
+
     height: 50px;
     width: 200px;
     border: none;
 }
 
 /* Curriculum section */
+
+.stories-section {
+    background: url(../assets/bg.png), linear-gradient(0.00deg, rgba(254, 163, 1, 0.3), rgba(255, 255, 255, 0.3) 100%);
+}
+
+.curriculum-section {
+    background: url(../assets/bg.png);
+}
+
 .curriculum-area {
     text-align: center;
     display: flex;
     flex-direction: column;
 }
-.curriculum-area>h1{
+
+.curriculum-area>h1 {
     font-size: 3.5em;
     padding: 60px 0 80px 0;
 }
@@ -223,17 +233,136 @@ body {
     box-shadow: inset 0px 0px 28.3px 0.94px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180.00deg, rgb(222, 245, 255), rgba(255, 255, 255, 0) 40%), rgb(255, 255, 255);
 }
+
 .c-btn-one {
     color: var(--blue);
 }
+
 .c-btn-two {
     color: var(--orange);
 }
+
 .c-btn-three {
     color: var(--blue2);
 }
 
+.smallar {
+    transform: scaleX(-1)
+}
+
+.aaa {
+    margin: 20px;
+}
+
+.arrow {
+    color: var(--white);
+
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    /* font-size: 2em; */
+
+    margin: 10px;
+    padding: 15px 18px;
+    background-color: orange;
+}
+
+/* OUR STORIES SECTION  */
+
+.stories-part>h1 {
+    font-size: 3.5em;
+}
+
+.stories-all-cards {
+    width: 100%;
+    border-radius: 16px;
+    display: flex;
+    gap: 5%;
+
+}
+
+.stories-all-cards img {
+    border-radius: 16px 16px 0 0;
+}
+
+.cards-right {
+    background-color: white;
+    border-radius: 16px;
+    display: grid;
+    width: 50%;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.cards-left {
+    width: 50%;
+    background-color: white;
+    display: grid;
+    grid-area: 5%;
+    width: 50%;
+
+}
+
+.cards-left>img {
+    width: 100%;
+}
+
+.right-common {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.right-common>img {
+    width: 100%;
+}
+
+.card-content-1 {
+    padding: 0px 40px;
+}
+
+.card-content-2 {
+    padding: 0px 20px;
+}
+
+.left-card-img {
+    position: relative
+}
+
+.btn-sec {
+    position: relative;
+    top: -5.7rem;
+    color: var(--white);
+    font-family: Quicksand;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 25px;
+    background: var(--blue1);
+
+    padding: 10px 40px;
+
+    border: none;
+}
+
+.btn-third {
+    position: relative;
+    top: -1.8rem;
+    color: var(--white);
+    font-family: Quicksand;
+    font-size: 1em;
+    font-weight: 600;
+    border-radius: 25px;
+    background: var(--blue1);
+
+    padding: 10px 40px;
+
+    border: none;
+}
+
 @media screen and (max-width: 576px) {
+
+   
     .nav-area {
 
         width: 100%;
@@ -329,19 +458,68 @@ body {
         width: 100%;
     }
 
-    .card-bg {
+
+
+    .curriculum-area {
+
+        display: flex;
+        width: 100%;
+
 
     }
-    .curriculum-area{
-        display: flex; 
-    width: 90%; 
-    
 
-}
-.curriculum-area>h1{
-    padding: 50px 0px 30px 0px;
-}
+    .curriculum-area>h1 {
+        text-align: center;
+        padding: 50px 0px 30px 0px;
+    }
 
-    
+    /* stories */
+    .stories-section {
+        background: url(image), linear-gradient(180.00deg, rgba(255, 255, 255, 0), rgba(254, 163, 1, 0.3) 100%);
+        margin: 0PX;
+        padding: 0PX;
+    }
+
+    /* .stories-all-cards {
+        margin: 0 auto;
+
+    } */
+
+    .stories-part {
+        text-align: center;
+        margin: 0 auto;
+        width: 100%;
+    }
+
+    .cards-left {
+        display: none;
+    }
+
+    .cards-right {
+        width: 90%;
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(2, 2fr);
+    }
+
+    .right-common {
+        width: auto;
+    }
+
+    .right-common>img {
+        width: 100%;
+    }
+
+    .btn-third {
+        font-size: .8em;
+        top: -1rem;
+        padding: 5px 10px;
+    }
+
+
+    .stories-part>h1 {
+        font-size: 2em;
+    }
+
 
 }
