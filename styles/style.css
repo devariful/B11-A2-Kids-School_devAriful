@@ -506,7 +506,7 @@ body {
 
 
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 586px) {
 
     .allover {
         margin: 0;
@@ -685,5 +685,7 @@ body {
         flex-direction: column;
         width: 80%;
     }
-
+.aaa{
+    display: none;
+}
 }
